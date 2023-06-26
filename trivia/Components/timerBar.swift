@@ -11,7 +11,7 @@ struct timerBar: View {
     @State private var timerValue: CGFloat = 1.0
     @State private var isTimerRunning = false
     
-    private let timerDuration: TimeInterval = 10.0
+    let timerDuration: TimeInterval
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -49,7 +49,7 @@ struct timerBar: View {
 
 struct timerBar_Previews: PreviewProvider {
     static var previews: some View {
-        timerBar()
+        timerBar(timerDuration: 10)
             .padding()
     }
 }

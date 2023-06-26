@@ -10,12 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            timerBar()
-            questionBlock(question: "What is the capital of the United Kingdom?")
-            ansButton(answer: "London")
-            ansButton(answer: "Manchester")
-            ansButton(answer: "Edinburgh")
-            ansButton(answer: "Belfast")
+            timerBar(timerDuration: 19)
+            qandaContainer(question: "What is the capital of the United Kingdom?", answers: ["London", "Manchester", "Edinburgh", "Belfast"], correctAnswer: 2)
         }
         .padding()
     }
@@ -26,4 +22,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
