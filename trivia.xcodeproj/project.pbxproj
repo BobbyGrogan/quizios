@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5294C302A47D59000E3E88D /* questionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5294C2F2A47D59000E3E88D /* questionBlock.swift */; };
-		C5294C322A47D74D00E3E88D /* timerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5294C312A47D74D00E3E88D /* timerBar.swift */; };
 		C5294C342A48B95B00E3E88D /* qandaContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5294C332A48B95B00E3E88D /* qandaContainer.swift */; };
 		C57302962A4221B8000EB2C2 /* triviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302952A4221B8000EB2C2 /* triviaApp.swift */; };
 		C57302982A4221B8000EB2C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302972A4221B8000EB2C2 /* ContentView.swift */; };
@@ -18,7 +16,6 @@
 		C57302B12A4221BA000EB2C2 /* triviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302B02A4221BA000EB2C2 /* triviaUITests.swift */; };
 		C57302B32A4221BA000EB2C2 /* triviaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302B22A4221BA000EB2C2 /* triviaUITestsLaunchTests.swift */; };
 		C57302C22A4230D9000EB2C2 /* catButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302C12A4230D9000EB2C2 /* catButton.swift */; };
-		C57302C62A4230F9000EB2C2 /* ansButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302C52A4230F9000EB2C2 /* ansButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C5294C2F2A47D59000E3E88D /* questionBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionBlock.swift; sourceTree = "<group>"; };
-		C5294C312A47D74D00E3E88D /* timerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerBar.swift; sourceTree = "<group>"; };
 		C5294C332A48B95B00E3E88D /* qandaContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qandaContainer.swift; sourceTree = "<group>"; };
 		C57302922A4221B8000EB2C2 /* trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57302952A4221B8000EB2C2 /* triviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaApp.swift; sourceTree = "<group>"; };
@@ -53,7 +48,6 @@
 		C57302B02A4221BA000EB2C2 /* triviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaUITests.swift; sourceTree = "<group>"; };
 		C57302B22A4221BA000EB2C2 /* triviaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C57302C12A4230D9000EB2C2 /* catButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catButton.swift; sourceTree = "<group>"; };
-		C57302C52A4230F9000EB2C2 /* ansButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ansButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				C57302C12A4230D9000EB2C2 /* catButton.swift */,
-				C57302C52A4230F9000EB2C2 /* ansButton.swift */,
-				C5294C2F2A47D59000E3E88D /* questionBlock.swift */,
-				C5294C312A47D74D00E3E88D /* timerBar.swift */,
 				C5294C332A48B95B00E3E88D /* qandaContainer.swift */,
 			);
 			path = Components;
@@ -281,11 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5294C342A48B95B00E3E88D /* qandaContainer.swift in Sources */,
-				C5294C302A47D59000E3E88D /* questionBlock.swift in Sources */,
 				C57302982A4221B8000EB2C2 /* ContentView.swift in Sources */,
 				C57302C22A4230D9000EB2C2 /* catButton.swift in Sources */,
-				C5294C322A47D74D00E3E88D /* timerBar.swift in Sources */,
-				C57302C62A4230F9000EB2C2 /* ansButton.swift in Sources */,
 				C57302962A4221B8000EB2C2 /* triviaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
