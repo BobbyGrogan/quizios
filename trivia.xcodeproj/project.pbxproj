@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C509177D2A539E7100951E82 /* triviaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C509177C2A539E7100951E82 /* triviaData.swift */; };
 		C5294C342A48B95B00E3E88D /* qandaContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5294C332A48B95B00E3E88D /* qandaContainer.swift */; };
 		C57302962A4221B8000EB2C2 /* triviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302952A4221B8000EB2C2 /* triviaApp.swift */; };
 		C57302982A4221B8000EB2C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57302972A4221B8000EB2C2 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C509177C2A539E7100951E82 /* triviaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaData.swift; sourceTree = "<group>"; };
 		C5294C332A48B95B00E3E88D /* qandaContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qandaContainer.swift; sourceTree = "<group>"; };
 		C57302922A4221B8000EB2C2 /* trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57302952A4221B8000EB2C2 /* triviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triviaApp.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				C57302972A4221B8000EB2C2 /* ContentView.swift */,
 				C57302992A4221BA000EB2C2 /* Assets.xcassets */,
 				C573029B2A4221BA000EB2C2 /* Preview Content */,
+				C509177C2A539E7100951E82 /* triviaData.swift */,
 			);
 			path = trivia;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5294C342A48B95B00E3E88D /* qandaContainer.swift in Sources */,
+				C509177D2A539E7100951E82 /* triviaData.swift in Sources */,
 				C57302982A4221B8000EB2C2 /* ContentView.swift in Sources */,
 				C57302C22A4230D9000EB2C2 /* catButton.swift in Sources */,
 				C57302962A4221B8000EB2C2 /* triviaApp.swift in Sources */,
