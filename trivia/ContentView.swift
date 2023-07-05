@@ -26,11 +26,19 @@ struct ContentView: View {
             if showScore {
                 ScoreView(score: userScore, totalQuestions: triviaData.questionsAndAnswers.count)
                     .navigationBarTitle("Score")
-                    .navigationBarItems(trailing:
-                        Button("Restart") {
-                            restartQuiz()
-                        }
-                    )
+                    .navigationBarItems(trailing: Button(action: {
+                        restartQuiz()
+                    }, label: {
+                        Text("Try Again")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .frame(width: 200, height: 60)
+                            .background(Color.blue)
+                            .cornerRadius(30)
+                            .shadow(color: Color.black.opacity(0.2), radius: 4, x: 0, y: 2)
+                            .padding()
+                            .offset(y: UIScreen.main.bounds.height / 2 - 30) // Adjust the offset as needed
+                    }))
             } else {
                 VStack(spacing: 20) {
                     VStack(spacing: 50) {
@@ -58,6 +66,7 @@ struct ContentView: View {
                                 .frame(width: UIScreen.main.bounds.width - 20, height: 20)
                                 .cornerRadius(10)
                                 .animation(.linear(duration: 0.01))
+
                                 .scaleEffect(x: CGFloat(timerValue) / 10, y: 1, anchor: .leading)
                                 .onChange(of: timerValue) { newValue in
                                     if newValue <= 0 {
@@ -126,7 +135,7 @@ struct ContentView: View {
     private func buttonBackgroundColor(for answerAndIndex: (Int, Bool)) -> Color {
         if let selectedAnswerIndex = selectedAnswerIndex {
             if selectedAnswerIndex == answerAndIndex.0 {
-                if timerValue <= 0 && answerAndIndex.1 {
+                if answerAndIndex.1 {
                     return .green
                 } else {
                     return .red
@@ -160,12 +169,24 @@ struct ContentView: View {
     private func handleTimeUp() {
         if selectedAnswerIndex == nil {
             if currentQuestionIndex < triviaData.questionsAndAnswers.count - 1 {
-                currentQuestionIndex += 1
+                let correctAnswerIndex = currentQuestion.1.firstIndex(where: { $0.values.first == true })
+                if let correctAnswerIndex = correctAnswerIndex {
+                    selectedAnswerIndex = correctAnswerIndex
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    currentQuestionIndex += 1
+                    self.selectedAnswerIndex = nil
+                    startTimer()
+                }
             } else {
-                showScore = true
+                let correctAnswerIndex = currentQuestion.1.firstIndex(where: { $0.values.first == true })
+                if let correctAnswerIndex = correctAnswerIndex {
+                    selectedAnswerIndex = correctAnswerIndex
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    showScore = true
+                }
             }
-            self.selectedAnswerIndex = nil
-            startTimer()
         }
     }
 
